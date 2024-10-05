@@ -4,26 +4,13 @@ import { TProducts } from "./product.interface";
 // Define Mongoose schema for Product
 const productSchema: Schema<TProducts> = new Schema(
   {
-    name: { type: String, required: true },
-    description: { type: String, required: true },
-    rating: { type: Number, enum: [1 | 2 | 3 | 4 | 5], required: true },
-    price: { type: Number, required: true },
-    stockQuantity: { type: Number, required: true },
+    name: { type: String },
+    description: { type: String },
+    rating: { type: Number },
+    price: { type: Number },
+    stockQuantity: { type: Number },
     category: {
       type: String,
-      enum: [
-        "Flowers",
-        "Trees",
-        "Shrubs and Bushes",
-        "Vegetables",
-        "Herbs",
-        "Seeds and Bulbs",
-        "Gardening Tools",
-        "Soils and Fertilizers",
-        "Garden Decor",
-        "Pest and Disease Control",
-      ],
-      required: true,
     },
     imageUrl: { type: String },
   },

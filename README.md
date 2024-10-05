@@ -25,4 +25,4 @@
 ### Installation
 
 - For compline code run this - tsc
-  -Run with this code-- npm run start:dev
+- Run with this code-- npm run start:dev
